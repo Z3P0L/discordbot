@@ -36,7 +36,7 @@ client.on("messageCreate", async (message) => {
     }
 
     if (command === "ticket-close") {
-       close_ticket(message, args);
+       close_ticket(message);
     }
 
     // End Ticket System

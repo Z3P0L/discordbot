@@ -42,7 +42,7 @@ module.exports = {
 
     },
 
-    close_ticket(message, args) {
+    close_ticket(message) {
         // Check if the user has a ticket open and if so, close it
         if (message.guild.channels.cache.find(ch => ch.name == `ticket-${message.author.username}`.toLowerCase())) {
             message.guild.channels.cache.find(ch => ch.name == `ticket-${message.author.username}`.toLowerCase()).delete();
